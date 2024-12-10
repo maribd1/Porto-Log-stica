@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  font-family: "Oswald";
+}
+header h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+header nav {
+  width: 50%;
+  height: 15vh;
+}
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15vh;
+  list-style: none;
+}
+header li {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+header .botoes-header > li > a {
+  text-decoration: none;
+  color: #000000;
+}
+header a:hover {
+  font-size: 2rem;
+}
+
+.container_background_image {
+  height: 97vh;
+  background-color: #F5F5DC;
+  background-image: url("./imagens/background.png");
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: repeat repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+  background-position: top;
+  background-position: bottom;
+  background-position: left;
+  background-position: right;
+  background-position: center;
+  font-family: "Oswald";
+}
+.container_background_image h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 3.5rem;
+  display: flex;
+  text-align: center;
+}
+.container_background_image h3 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.2rem;
+  display: flex;
+}
+.container_background_image .container_background_image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.container_background_image .metade {
+  width: 50%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container_background_image .services-button {
+  background-color: blue;
+  font-size: 25px;
+  color: white;
+  padding: 9px 32px 9px 32px;
+  border: 0px;
+}
+.container_background_image .textos {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  line-height: 490%;
+}/*# sourceMappingURL=style.css.map */
