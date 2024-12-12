@@ -10,7 +10,7 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 15vh;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 header h2 {
   font-weight: 700;
@@ -54,19 +54,19 @@ header a:hover {
   background-position: left;
   background-position: right;
   background-position: center;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 .container_background_image h1 {
   color: #ffffff;
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 4rem;
   display: flex;
   text-align: center;
 }
 .container_background_image h3 {
   color: #ffffff;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: flex;
 }
 .container_background_image .container_background_image {
@@ -75,6 +75,7 @@ header a:hover {
   width: 100%;
 }
 .container_background_image .metade {
+  font-family: "Osward", sans-serif;
   width: 50%;
   display: flex;
   height: 100%;
@@ -83,6 +84,7 @@ header a:hover {
   justify-content: center;
 }
 .container_background_image .services-button {
+  font-family: "Osward", sans-serif;
   background-color: blue;
   font-size: 25px;
   color: white;
@@ -90,8 +92,56 @@ header a:hover {
   border: 0px;
 }
 .container_background_image .textos {
+  font-family: "Osward", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: self-start;
-  line-height: 490%;
+  line-height: 420%;
+}
+
+.paragrafo {
+  height: 155vh;
+  display: flex;
+  justify-content: space-between;
+}
+.paragrafo section {
+  border: solid blue;
+  box-sizing: border-box;
+  width: 100%;
+  align-self: start;
+  display: inline-block;
+}
+.paragrafo h3 {
+  width: 50%;
+  color: #0017E9;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+}
+.paragrafo h2 {
+  width: 50%;
+  color: #000000;
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+}
+.paragrafo p {
+  width: 30%;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.paragrafo .link {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  color: #0017E9;
+  text-decoration: none;
+}
+.paragrafo .link:hover {
+  background: none;
+}
+.paragrafo img {
+  width: 40%;
+  height: 80vh;
 }/*# sourceMappingURL=style.css.map */
