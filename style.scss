@@ -1,28 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-header{
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.header-nav-menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 15vh;
     font-family: "Oswald", sans-serif;
 
-    h2{
+    .h2-nav-menu{
         font-weight: 700;
         font-size: 2.5rem;
     }
 
-    nav{
+    .nav-menu{
         width: 50%;
         height: 15vh;
     }
 
-    ul{
+    .ul-nav-menu{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -30,16 +36,16 @@ header{
         list-style: none;
     }
 
-    li{
+    .button-nav-menu{
         font-size: 1.25rem;
         font-weight: 500;
     }
-    .botoes-header > li > a{
+    .button-nav-menu > a{
         text-decoration: none;
         color: #000000;
     }
-    a:hover {
-        font-size: 2.00rem;
+    .button-nav-menu > a:hover {
+        color: #0017E9;
     }
 }
 
@@ -64,19 +70,18 @@ header{
     background-position: center; //centro
     font-family: "Oswald", sans-serif;
 
-    h1{
+    .h1-main{
         color: #ffffff;
         font-weight: 700;
         font-size: 4.0rem;
-        display: flex;
         text-align: center;
     }
 
-    h3{
+    .h3-main{
         color:#ffffff;
         font-weight: 300;
         font-size: 1.3rem;
-        display: flex;
+        font-family: "Oswald", sans-serif;
     }
 
     .container_background_image{
@@ -85,8 +90,8 @@ header{
         width: 100%;
     }
     
-    .metade{
-        font-family: "Osward", sans-serif;
+    .paragraph-main{
+        font-family: "Oswald", sans-serif;
         width: 50%;
         display: flex;
         height: 100%;
@@ -96,74 +101,80 @@ header{
     }
     
     .services-button{
-        font-family: "Osward", sans-serif;
-        background-color: blue;
-        font-size: 25px;
+        font-family: "Oswald", sans-serif;
+        background-color: #0016DF;
+        font-size: 1.3rem;
         color: white;
-        padding: 9px 32px 9px 32px;
+        padding: 7px 50px 7px 50px;
+        margin-left: 4%;
         border: 0px;
+    }
+
+    .services-button:hover{
+        background-color: #ffffff;
+        color: #0016DF;
     }
     
     .textos{
-        font-family: "Osward", sans-serif;
+        font-family: "Oswald", sans-serif;
         display: flex;
         flex-direction: column;
         align-items: self-start;
-        line-height: 420%;
+        line-height: 410%;
     }
 }
 
-.paragrafo{
-        height: 155vh;
+.about-us{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15% 0%;
+
+    .paragrafo{
+        height: 85%;
+        width: 45%;
         display: flex;
         justify-content: space-between;
-        //flex-direction: column; 
-    
-    section{
-        border: solid blue;
-        box-sizing: border-box;
-        width: 100%;
-        align-self: start;
-        display: inline-block;
-    }
+        flex-direction: column;
+        padding: 0px 5%;
 
-    h3{
-        width: 50%;
+     .h3-about-us{
         color:#0017E9;
         font-size: 1.5rem;
         font-weight: 500;
         font-family: "Oswald", sans-serif;
-    }
-
-    h2{
-        width: 50%;
-        color: #000000;
-        font-size: 2.25rem;
-        font-weight: 800;
-        font-family: "Roboto", sans-serif;
-    }
-
-    p{
-        width: 30%;
-        color: #000000;
-        font-size: 0.9rem;
-        font-weight: 400;
-        font-family: "Roboto", sans-serif;
-    }
-
-    .link{
-        font-family: "Roboto", sans-serif;
-        display: flex;
-        color: #0017E9;
-        text-decoration: none;
-
-        &:hover {
-           background: none;
         }
-    } 
 
-    img{
-        width: 40%;
-        height: 80vh;
+     h2{
+            color: #000000;
+            font-size: 2.25rem;
+            font-weight: 800;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .paragraph-about-us{
+            color: #000000;
+            font-size: 1.1rem;
+            width: 76%;
+            line-height: 1.358;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .link{
+            font-family: "Roboto", sans-serif;
+            color: #0017E9;
+            text-decoration: none;
+            font-weight: 500;
+        } 
     }
+    .img-navio{
+        height: 100%;
+        width: 45%;
+    }
+
 }
+
+

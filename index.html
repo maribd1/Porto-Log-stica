@@ -8,46 +8,57 @@
 </head>
 <body> <!-- corpo inteiro da pagina que aprecerá para o usuario-->
 
-    <header> <!--Cabeça-->
+    <header class="header-nav-menu"> <!--Cabeça-->
 
-        <h2>PortoLogística</h2>
-        <nav>
-            <ul class="botoes-header">
-                <li><a href="#" target="_blank">Home</a></li>
-                <li><a href="#" target="_blank">Mais</a></li>
-                <li><a href="#" target="_blank">Sobre</a></li>
-                <li><a href="#" target="_blank">Serviços</a></li>
-                <li><a href="#" target="_blank">Contato</a></li>
+        <h2 class="h2-nav-menu">PortoLogística</h2>
+        <nav class="nav-menu">
+            <ul class="ul-nav-menu">
+                <li class="button-nav-menu"><a href="#" target="_blank">Home</a></li>
+                <li class="button-nav-menu"><a href="#" target="_blank">Mais</a></li>
+                <li class="button-nav-menu"><a href="#" target="_blank">Sobre</a></li>
+                <li class="button-nav-menu"><a href="#" target="_blank">Serviços</a></li>
+                <li class="button-nav-menu"><a href="#" target="_blank">Contato</a></li>
             </ul>
         </nav>
     </header>
  
     <main>
         <section class="container_background_image">
-            <section class="metade">
+            <section class="paragraph-main">
                 <section class="textos">
-                    <h1>PortoLogística</h1>
-                    <h3>Soluções integradas para gestão portuária</h3>
+                    <h1 class="h1-main">PortoLogística</h1>
+                    <h3 class="h3-main">Soluções integradas para gestão portuária</h3>
                     <button class="services-button">Serviços</button>
                 </section>
             </section>
         </section>
 
-        <section class="paragrafo">
-            <section>
-                <h3>Gestão portuária integrada</h3>
+        <section class="about-us">
+            <section class="paragrafo">
 
-                <h2>Simplificando suas operações portuarias</h2>
+                <header>
+                    <h3 class="h3-about-us">Gestão portuária integrada</h3>
+                </header>
 
-                <p> A PortoLogistica é um sistema de gestão integrado de ultima geração desenvolvido para aumentar a eficiência e a segurança das operações portuárias no Brasil. Nossa plataforma oferece monitoramento em tempo real, automação de processos e análise de dados, garantindo que suas necessidades de movimentação, descarga e armazenamento de carga sejam atendidas com precisão. Faça parceria conosco para obter uma solução robusta e confiável para agilizar seus fluxos logísitcos. </p>
-                <a href="#contato" class="link">Entre em contato</a>
+                <body>
+                    <h2>Simplificando suas operações portuarias</h2>
 
-                <img src="./imagens/imagem_gestao_portuaria (1).png" alt="vista aerea do navio de carga e conteiner de carga no porto"/>
+                    <p class="paragraph-about-us"> A PortoLogistica é um sistema de gestão integrado de ultima geração desenvolvido para aumentar a eficiência e a segurança das operações portuárias no Brasil. Nossa plataforma oferece monitoramento em tempo real, automação de processos e análise de dados, garantindo que suas necessidades de movimentação, descarga e armazenamento de carga sejam atendidas com precisão. Faça parceria conosco para obter uma solução robusta e confiável para agilizar seus fluxos logísitcos. </p>
+                </body>
+
+                <footer>
+                    <a href="#contato" class="link">Entre em contato</a>
+                </footer>
             </section>
+
+            <div class="img-navio">
+                <img src="./imagens/imagem_gestao_portuaria (1).png" alt="vista aerea do navio de carga e conteiner de carga no porto"/>
+            </div>
+
         </section>
 
         <section class="soluções">
-            <section>
+            <section class="title">
                 <h2>Nossas soluções</h2>
                 <h2>O que esperar do nosso sistema</h2>
             </section>
@@ -95,7 +106,7 @@
             </figure>
         </section>
 
-        <form action="" class="campos">
+        <form action="/submit_form" method="post" class="campos">
             <fieldset class="digitaçao">
                 <h2>Fale conosco</h2>
                 <h4>Se conecte com nossos colaboradores</h4>
@@ -117,11 +128,10 @@
 
                 <div>
                     <label for="mensagem">Mensagem</label>
-                    <input type="text" name="mensagem"
-                    id="mensagem"/>
+                    <textarea name="mensagem" id="text"></textarea>
                 </div>
 
-                <button>Enviar</button>
+                <input type="submit" value="Enviar" class="envio">
 
             </fieldset>
         </form>
