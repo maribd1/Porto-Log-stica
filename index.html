@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Porto Logística</title>
 </head>
-<body> <!-- corpo inteiro da pagina que aprecerá para o usuario-->
+<body> 
 
-    <header class="header-nav-menu"> <!--Cabeça-->
+    <header class="header-nav-menu"> 
 
         <h2 class="h2-nav-menu">PortoLogística</h2>
+
         <nav class="nav-menu">
             <ul class="ul-nav-menu">
                 <li class="button-nav-menu"><a href="#" target="_blank">Home</a></li>
@@ -58,87 +59,118 @@
         </section>
 
         <section class="soluções">
-            <section class="title">
-                <h2>Nossas soluções</h2>
-                <h2>O que esperar do nosso sistema</h2>
+
+            <header class="title-soluções">
+                <h2 class="h2-soluções">Nossas soluções</h2>
+                <h2 class="h2-segundo-soluções">O que esperar do nosso sistema</h2>
+            </header>
+
+            <section class="body-solutions">
+
+                <article class="card">
+
+                    <img class="img-card-solutions" src="./imagens/img_box_1 (1).png" alt="Uma foto aerea de um navio cargueiro atracado no porto"/>
+
+                    <figcaption class="card-text">
+                        <h3 class="h3-card">Containers a todo momento</h3>
+                        <p class="p-card">Alugue seu container a qualquer momento entrando em contato com os nossos colaboradores</p>
+                    </figcaption>
+                </article>
+    
+                <article class="card">
+
+                    <img class="img-card-solutions" src="./imagens/img_box_2 (1).png" alt="foto aereade tres navios cargueiros no mar"/>
+
+                    <figcaption class="card-text">
+                        <h3 class="h3-card">+ 1000 navios</h3>
+                        <p class="p-card">Temos mais de 1000 navios prontos para lidar com suas demandas</p>
+                    </figcaption>
+                </article>
+    
+                <article class="card">
+
+                    <img class="img-card-solutions" src="./imagens/img_box_3.png" alt="homem sentado fazendo o monitoramento de cameras atraves de telas">
+
+                    <figcaption class="card-text">
+                        <h3 class="h3-card">Monitoramento</h3>
+                        <p class="p-card">Nosso monitoramento é feito em tempo real com os profissionais mais qualificados do mercado</p>
+                    </figcaption>
+                </article>
             </section>
-
-            <article class="conteiner">
-                <img src="./imagens/img_box_1 (1).png" alt="Uma foto aerea de um navio cargueiro atracado no porto"/>
-
-                <h2>Containers a todo momento</h2>
-                <p>Alugue seu container a qualquer momento entrando em contato com os nossos colaboradores</p>
-            </article>
-
-            <article class="navios">
-                <img src="./imagens/img_box_2 (1).png" alt="foto aereade tres navios cargueiros no mar"/>
-
-                <h2>+ 1000 navios</h2>
-                <p>Temos mais de 1000 navios prontos para lidar com suas demandas</p>
-            </article>
-
-            <article class="monitoramento">
-                <img src="./imagens/img_box_3.png" alt="homem sentado fazendo o monitoramento de cameras atraves de telas">
-
-                <h2>Monitoramento</h2>
-                <p>Nosso monitoramento é feito em tempo real com os profissionais mais qualificados do mercado</p>
-            </article>
         </section>
 
-        <section class="galeria">
-            <section class="unidades">
-                <h2>Atendimento e comercial</h2>
-                <h4>Entre em contato com a unidade</h4>
+        <section class="section-contacts">
+
+            <section class="body-atendimento">
+                <section class="galeria">
+
+                    <section class="titulos-section-contacts">
+                        <h2 class="h2-section-contacts">Atendimento e comercial</h2>
+                        <h4 class="h4-section-contacts">Entre em contato com a unidade</h4>
+                    </section>
+
+                    <section class="container-imgs">
+                        <figure class="card-location">
+                            <img class="img-location" src="./imagens/img_niteroi.png" alt="imagem aerea de um navio atracado na unidade de niteroi"/>
+                            <figcaption class="figcaption-location">Niterói</figcaption>
+                        </figure>
+                        
+                        <figure class="card-location"> 
+                            <img class="img-location" src="./imagens/img_ilha_conceicao.png" alt="imagem aerea do porto de conceição"/>
+                            <figcaption class="figcaption-location">Ilha da conceição</figcaption>
+                        </figure>
+        
+                        <figure class="card-location">
+                            <img class="img-location" src="./imagens/img_santos.png" alt="imagem aerea de navios atracados no porto de Santos"/>
+                            <figcaption class="figcaption-location">Santos</figcaption>
+                        </figure>
+
+                        <figure class="card-location">
+                            <img class="img-location" src="./imagens/img_caju.png" alt="imagem aerea do porto do Caju"/>
+                            <figcaption class="figcaption-location">Cajú</figcaption>
+                        </figure>
+                    </section>
+                </section>
+
+                <form action="/submit_form" method="post" class="form-digitacao">
+                    
+                    <section class="titulos-section-contacts">
+                        <h2 class="h2-section-contacts">Fale conosco</h2>
+                        <h4 class="h4-section-contacts">Se conecte com nossos colaboradores</h4>
+                    </section>
+
+                    <fieldset class="fieldset-digitacao">
+    
+                        <div class="text-box-name">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome"/>
+                        </div>
+
+                        <div class="text-box-email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email"/>
+                        </div>
+
+                        <div class="text-box-telefone">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="telefone" id="telefone"/>
+                        </div>
+
+                        <div class="text-box-mensagem">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="mensagem" id="text"></textarea>
+                        </div>
+
+                        <input type="submit" value="Enviar" class="envio">
+
+                    </fieldset>
+                </form>
             </section>
-
-            <figure class="fotos">
-                <img src="./imagens/img_niteroi.png" alt="imagem aerea de um navio atracado na unidade de niteroi"/>
-                <figcaption>Niterói</figcaption>
-
-                <img src="./imagens/img_ilha_conceicao.png" alt="imagem aerea do porto de conceição"/>
-                <figcaption>Ilha da conceição</figcaption>
-
-                <img src="./imagens/img_santos.png" alt="imagem aerea de navios atracados no porto de Santos"/>
-                <figcaption>Santos</figcaption>
-
-                <img src="./imagens/img_caju.png" alt="imagem aerea do porto do Caju"/>
-                <figcaption>Cajú</figcaption>
-            </figure>
         </section>
-
-        <form action="/submit_form" method="post" class="campos">
-            <fieldset class="digitaçao">
-                <h2>Fale conosco</h2>
-                <h4>Se conecte com nossos colaboradores</h4>
-
-                <div>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome"/>
-                </div>
-
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email"/>
-                </div>
-
-                <div>
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" id="telefone"/>
-                </div>
-
-                <div>
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="text"></textarea>
-                </div>
-
-                <input type="submit" value="Enviar" class="envio">
-
-            </fieldset>
-        </form>
     </main> <!--meio-->
 
-    <footer>
-        <p>&copy; 2024 Desafio produzido para fins educativos, Escola Vai na Web.</p>
+    <footer class="footer-final">
+        <p class="p-final">&copy; 2024 Desafio produzido para fins educativos, Escola Vai na Web.</p>
     </footer> <!--pé-->
     
 </body>
